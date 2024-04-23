@@ -1,4 +1,4 @@
-#Earthquake Information Hub
+# Earthquake Information Hub
 
 Welcome to the Earthquake Information Hub repository!
 
