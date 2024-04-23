@@ -70,6 +70,9 @@ body {
 #sidebar.hide {
 	width: 60px;
 }
+#sidebar .main-text {
+	color: #DCDF31;
+}
 #sidebar .brand {
 	font-size: 24px;
 	font-weight: 700;
@@ -90,6 +93,15 @@ body {
 	display: flex;
 	justify-content: center;
 }
+#sidebar .icon {
+	min-width: 38px;
+	min-height: 38px;
+	max-width: 38px;
+	max-height: 38px;
+	margin: 20px;
+	margin-right: 10px;
+}
+
 #sidebar .side-menu {
 	width: 100%;
 	margin-top: 48px;
