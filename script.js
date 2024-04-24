@@ -22,10 +22,71 @@ menuBar.addEventListener('click', function () {
 	sidebar.classList.toggle('hide');
 })
 
+//TOGGLE MAIN PAGE DISPLAY
+const dashboardButton = document.getElementById('dashboard');
+const newsButton = document.getElementById('news');
+const hotlinesButton = document.getElementById('hotlines');
+const notificationsButton = document.getElementById('notifications');
+const mapsButton = document.getElementById('maps')
 
+function showDefaultContent() {
+	function showDashboardContent() {
+		document.getElementById('main-dashboard').style.display ='block';
+		document.getElementById('main-news').style.display = 'none';
+		document.getElementById('main-hotlines').style.display = 'none';
+		document.getElementById('main-notifications').style.display = 'none';
+		document.getElementById('main-maps').style.display = 'none';
+	}
+showDashboardContent();
+}
 
+dashboardButton.addEventListener('click', function() {
+showDefaultContent();
+})
 
+newsButton.addEventListener('click', function() {
+	function showNewsContent() {
+		document.getElementById('main-dashboard').style.display ='none';
+		document.getElementById('main-news').style.display = 'block';
+		document.getElementById('main-hotlines').style.display  = 'none';
+		document.getElementById('main-notifications').style.display  = 'none';
+		document.getElementById('main-maps').style.display = 'none';
+	}
+showNewsContent();
+})
 
+hotlinesButton.addEventListener('click', function() {
+	function showHotlinesContent() {
+		document.getElementById('main-dashboard').style.display ='none';
+		document.getElementById('main-news').style.display = 'none';
+		document.getElementById('main-hotlines').style.display  = 'block';
+		document.getElementById('main-notifications').style.display  = 'none';
+		document.getElementById('main-maps').style.display = 'none';
+	}
+showHotlinesContent();
+})
+
+notificationsButton.addEventListener('click', function() {
+	function showNotificationsContent() {
+		document.getElementById('main-dashboard').style.display ='none';
+		document.getElementById('main-news').style.display = 'none';
+		document.getElementById('main-hotlines').style.display  = 'none';
+		document.getElementById('main-notifications').style.display  = 'block';
+		document.getElementById('main-maps').style.display = 'none';
+	}
+showNotificationsContent();
+})
+
+mapsButton.addEventListener('click', function() {
+	function showMapsContent() {
+		document.getElementById('main-dashboard').style.display ='none';
+		document.getElementById('main-news').style.display = 'none';
+		document.getElementById('main-hotlines').style.display  = 'none';
+		document.getElementById('main-notifications').style.display  = 'none';
+		document.getElementById('main-maps').style.display = 'block';
+	}
+showMapsContent();
+})
 
 
 const searchButton = document.querySelector('#content nav form .form-input button');
@@ -74,3 +135,5 @@ switchMode.addEventListener('change', function () {
 		document.body.classList.remove('dark');
 	}
 })
+
+showDefaultContent();
