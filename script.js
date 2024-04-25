@@ -23,12 +23,18 @@ menuBar.addEventListener('click', function () {
 })
 
 //TOGGLE MAIN PAGE DISPLAY
+//SET NAMES FOR BUTTONS
 const dashboardButton = document.getElementById('dashboard');
 const newsButton = document.getElementById('news');
 const hotlinesButton = document.getElementById('hotlines');
 const notificationsButton = document.getElementById('notifications');
 const mapsButton = document.getElementById('maps')
 
+
+//I FEEL LIKE THERES A MORE EFFICIENT WAY TO IMPLEMENT THIS BUT IDK, CURRENTLY
+//WHAT IT DOES IS LOAD EVERYTHING INITIALLY AND EACH BUTTON PRESS HIDES AND UNHIDES
+//THE RESPECTIVE ELEMENTS BUT YKNOW, I LOVE THE 4'11 SHORT HAIRED CHINITA CAR GIRL
+//LOADS DEFAULT PAGE (DASHBOARD)
 function showDefaultContent() {
 	function showDashboardContent() {
 		document.getElementById('main-dashboard').style.display ='block';
@@ -40,10 +46,12 @@ function showDefaultContent() {
 showDashboardContent();
 }
 
+//HANDLES DASHBOARD BUTTON PRESS
 dashboardButton.addEventListener('click', function() {
 showDefaultContent();
 })
 
+//HANDLES NEWS BUTTON PRESS
 newsButton.addEventListener('click', function() {
 	function showNewsContent() {
 		document.getElementById('main-dashboard').style.display ='none';
@@ -55,6 +63,7 @@ newsButton.addEventListener('click', function() {
 showNewsContent();
 })
 
+//HANDLES HOTLINE BUTTON PRESS
 hotlinesButton.addEventListener('click', function() {
 	function showHotlinesContent() {
 		document.getElementById('main-dashboard').style.display ='none';
@@ -66,6 +75,7 @@ hotlinesButton.addEventListener('click', function() {
 showHotlinesContent();
 })
 
+//HANDLES NOTIFICATION BUTTON PRESS
 notificationsButton.addEventListener('click', function() {
 	function showNotificationsContent() {
 		document.getElementById('main-dashboard').style.display ='none';
@@ -77,6 +87,7 @@ notificationsButton.addEventListener('click', function() {
 showNotificationsContent();
 })
 
+//HANDLES MAP BUTTON PRESS
 mapsButton.addEventListener('click', function() {
 	function showMapsContent() {
 		document.getElementById('main-dashboard').style.display ='none';
