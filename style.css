@@ -46,7 +46,31 @@ body {
 	overflow-x: hidden;
 }
 
-
+/* NEWS */
+/* Basic styling for news articles */
+.newsArticle {
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
+  
+  .newsTitle {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+  .newsDescription {
+	font-size: 16px;
+	color: #333;
+  }
+  
+  .newsSource {
+	font-size: 14px;
+	color: #666;
+  }
+  
 
 
 
@@ -338,6 +362,15 @@ body {
 	font-weight: 600;
 	margin-bottom: 10px;
 	color: var(--dark);
+}
+#content main .head-title .left iframe {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 10000px;
+	min-width: 1000px;
+	margin:0;
+	auto;
 }
 #content main .head-title .left .breadcrumb {
 	display: flex;
