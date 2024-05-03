@@ -24,11 +24,13 @@ menuBar.addEventListener('click', function () {
 
 //TOGGLE MAIN PAGE DISPLAY
 //SET NAMES FOR BUTTONS
+const logoButton = document.getElementById('logo')
 const dashboardButton = document.getElementById('dashboard');
 const newsButton = document.getElementById('news');
 const hotlinesButton = document.getElementById('hotlines');
 const notificationsButton = document.getElementById('notifications');
 const mapsButton = document.getElementById('maps')
+const notificationsButton2 = document.getElementById('notifications2')
 
 
 //I FEEL LIKE THERES A MORE EFFICIENT WAY TO IMPLEMENT THIS BUT IDK, CURRENTLY
@@ -50,6 +52,10 @@ showDashboardContent();
 dashboardButton.addEventListener('click', function() {
 showDefaultContent();
 })
+
+logoButton.addEventListener('click', function() {
+	showDefaultContent();
+	})
 
 //HANDLES NEWS BUTTON PRESS
 newsButton.addEventListener('click', function() {
@@ -77,6 +83,18 @@ showHotlinesContent();
 
 //HANDLES NOTIFICATION BUTTON PRESS
 notificationsButton.addEventListener('click', function() {
+	function showNotificationsContent() {
+		document.getElementById('main-dashboard').style.display ='none';
+		document.getElementById('main-news').style.display = 'none';
+		document.getElementById('main-hotlines').style.display  = 'none';
+		document.getElementById('main-notifications').style.display  = 'block';
+		document.getElementById('main-maps').style.display = 'none';
+	}
+showNotificationsContent();
+})
+
+//HANDLES NOTIFICATION BUTTON 2 PRESS
+notificationsButton2.addEventListener('click', function() {
 	function showNotificationsContent() {
 		document.getElementById('main-dashboard').style.display ='none';
 		document.getElementById('main-news').style.display = 'none';
