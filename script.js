@@ -44,6 +44,7 @@ function showDefaultContent() {
 		document.getElementById('main-hotlines').style.display = 'none';
 		document.getElementById('main-notifications').style.display = 'none';
 		document.getElementById('main-maps').style.display = 'none';
+		document.getElementById('headerText').innerText = "Dashboard";
 	}
 showDashboardContent();
 }
