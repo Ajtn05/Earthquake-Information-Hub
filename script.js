@@ -66,6 +66,7 @@ newsButton.addEventListener('click', function() {
 		document.getElementById('main-hotlines').style.display  = 'none';
 		document.getElementById('main-notifications').style.display  = 'none';
 		document.getElementById('main-maps').style.display = 'none';
+		document.getElementById('headerText').innerText = "News";
 	}
 showNewsContent();
 })
@@ -78,6 +79,7 @@ hotlinesButton.addEventListener('click', function() {
 		document.getElementById('main-hotlines').style.display  = 'block';
 		document.getElementById('main-notifications').style.display  = 'none';
 		document.getElementById('main-maps').style.display = 'none';
+		document.getElementById('headerText').innerText = "Hotlines";
 	}
 showHotlinesContent();
 })
@@ -90,19 +92,13 @@ notificationsButton.addEventListener('click', function() {
 		document.getElementById('main-hotlines').style.display  = 'none';
 		document.getElementById('main-notifications').style.display  = 'block';
 		document.getElementById('main-maps').style.display = 'none';
+		document.getElementById('headerText').innerText = "Notifications";
 	}
 showNotificationsContent();
 })
 
 //HANDLES NOTIFICATION BUTTON 2 PRESS
 notificationsButton2.addEventListener('click', function() {
-	function showNotificationsContent() {
-		document.getElementById('main-dashboard').style.display ='none';
-		document.getElementById('main-news').style.display = 'none';
-		document.getElementById('main-hotlines').style.display  = 'none';
-		document.getElementById('main-notifications').style.display  = 'block';
-		document.getElementById('main-maps').style.display = 'none';
-	}
 showNotificationsContent();
 })
 
@@ -114,6 +110,7 @@ mapsButton.addEventListener('click', function() {
 		document.getElementById('main-hotlines').style.display  = 'none';
 		document.getElementById('main-notifications').style.display  = 'none';
 		document.getElementById('main-maps').style.display = 'block';
+		document.getElementById('headerText').innerText = "Maps";
 	}
 showMapsContent();
 })
