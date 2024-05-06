@@ -370,7 +370,7 @@ body {
 	height: 10000px;
 	min-width: 1000px;
 	margin:0;
-	auto;
+	auto;	
 }
 #content main .head-title .left .breadcrumb {
 	display: flex;
