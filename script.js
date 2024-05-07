@@ -99,6 +99,14 @@ showNotificationsContent();
 
 //HANDLES NOTIFICATION BUTTON 2 PRESS
 notificationsButton2.addEventListener('click', function() {
+	function showNotificationsContent() {
+		document.getElementById('main-dashboard').style.display ='none';
+		document.getElementById('main-news').style.display = 'none';
+		document.getElementById('main-hotlines').style.display  = 'none';
+		document.getElementById('main-notifications').style.display  = 'block';
+		document.getElementById('main-maps').style.display = 'none';
+		document.getElementById('headerText').innerText = "Notifications";
+	}
 showNotificationsContent();
 })
 
@@ -150,6 +158,17 @@ window.addEventListener('resize', function () {
 		searchForm.classList.remove('show');
 	}
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    var imgSelector = document.getElementById('imgSelector');
+    var imgViewer = document.getElementById('map');
+
+    pdfSelector.addEventListener('change', function() {
+        var selectedIMG = imgSelector.value;
+        var imgEmbed = '<img src="' + selectedIMG + '"width="100%" height="100%">';
+        document.getElementById('map').innerHTML = imgEmbed;
+    });
+});
 
 
 
