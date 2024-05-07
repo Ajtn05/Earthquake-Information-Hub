@@ -159,15 +159,10 @@ window.addEventListener('resize', function () {
 	}
 })
 
-document.addEventListener('DOMContentLoaded', function() {
-    var imgSelector = document.getElementById('imgSelector');
-    var imgViewer = document.getElementById('map');
-
-    pdfSelector.addEventListener('change', function() {
-        var selectedIMG = imgSelector.value;
-        var imgEmbed = '<img src="' + selectedIMG + '"width="100%" height="100%">';
-        document.getElementById('map').innerHTML = imgEmbed;
-    });
+document.getElementById("image-select").addEventListener("change", function(){
+	var selectedImage = this.value;
+	document.getElementById("display-image").src = selectedImage;
+	document.getElementById("display-image").alt = "Selected Image: " + selectedImage;
 });
 
 
@@ -177,8 +172,10 @@ const switchMode = document.getElementById('switch-mode');
 switchMode.addEventListener('change', function () {
 	if(this.checked) {
 		document.body.classList.add('dark');
+		document.getElementById("headerText").style.color = "white";
 	} else {
 		document.body.classList.remove('dark');
+		document.getElementById("headerText").style.color = "black";
 	}
 })
 
