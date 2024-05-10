@@ -9,6 +9,31 @@
 	<!-- My CSS -->
 	<link rel="stylesheet" href="style.css">
 
+	<script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+
+	<script>
+		import { initializeApp } from "firebase/app";
+		import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		apiKey: "AIzaSyAAg3RTHTTGwPERsE7xvZ3ZoMmLs7bPCAk",
+		authDomain: "earthquake-information-hub.firebaseapp.com",
+		databaseURL: "https://earthquake-information-hub-default-rtdb.asia-southeast1.firebasedatabase.app",
+		projectId: "earthquake-information-hub",
+		storageBucket: "earthquake-information-hub.appspot.com",
+		messagingSenderId: "1007937255833",
+		appId: "1:1007937255833:web:a8c5d198623db545fb7b08",
+		measurementId: "G-G48E5YER2M"
+		};
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	</script>
 	<title>Earthquake Information Hub</title>
 </head>
 <body>
@@ -116,193 +141,50 @@
 						<ul class="box-info">
 							<li>
 								<span class="text">
-									<h3>Suwat kang Tarah</h3>
-									<h5>by dumran</h5>
-									<p>Kung nanguyab pa lang mo, o dili ninyo uyab ang babaye, ayaw gyud hatagi og love letter. Kay ngano? Mao ni ang istorya.
-
-										Sa akong panahon wala pay email, wala pay Windows, wala pay text, maong wala pa sad mausohi kanang gitawag nila karon nga jejemon. Adtong hayskul ko, kung gusto nimo magpadalag mensahe sa babaye, magpalit kag stationery, kanang scented paper gud, kinamot kag suwat, himo kag love letter. Diri mahusgahan ang imong kahagtik sa grammar, kaalam sa spelling, kanindoton sa agi, kahapsay sa pagsuwat walay pinapaan, tin-aw sa pangisip, kung nindot kabag taste, basi ni sa papel nga imong gipili. Tanan-tanan, kahago ug oras, nga imong gihatag, magpamatuud sa imong kasinsero.
-										
-										Ang pinakaunang babaye nga gihatagan nako og love letter kay ang akong crush sa hayskul, si Tarah. Diri magsugod akong istorya.
-										
-										Pit-os ang kinabuhi sa akong pamilya adtong tungura. Sa Pepsi nagtrabaho ang akong amahan, ug adtong pagkahitabo sa Number Fever fiasco, daghan nanga-lay off, ug bisan wala siyay apil, kuwang na iyang kita kada buwan kay wala na siyay overtime. Ang kaparat, first year pa lang ko, ang akong amahan milargas Manila, gibiyaan niya iyang trabaho sa Cebu. Plano niyang mo-abroad, kay nagpasalig man ang iyang ig-agaw nga motabang. Ug mitras naghuwat sa iyang swerte, mitrabaho akong amahan sa usa ka plastic factory diris may Mandaluyong. Ug pag-second year nako, miapas sa Manila ang tibuok pamilya, akong inahan ug mga igsoon. Nagpabilin ko sa Cebu aron tapuson ang akong hayskul. Mipuyo kos balay sa akong tiyo, igsoon sa akong amahan, uban iyang pamilya. Mostly, ako jud tong kagustohan kay panan-aw nako sa Manila, sa among kinabuhi didto, hanap ang akong kaugmaon. Lagmit di ko kahuman og hayskul kung mouban ko sa akong pamilya, musamot mi kalaot. At least, kung high school graduate na ko, mas dali ra ko makakita og trabaho, bisag asa ko masaag, makatabang na ko sa akong pamilya. Kinahanglan makahuman jud kog hayskul, by all means possible, mao jud to akong tumong.
-										
-										Klasmet mi ni Tarah pag-first year, kalimot ko, morag section 2 man siguro mi adto, basta klasmet mi. Suod mi, sigi lang mi istorya kay dug-ol ra man among mga lingkuranan. One time gani, upat mi kabuok, apil si Tarah, nasakpan mi sa maestra nga wa maminaw, suko kaayo sa amoa, nabutangan hinuon mig scotch tape sa baba. Unya pag-second year namo, na-section 1 si Tarah, kay bright man gud tong bayhana, tapos ako sa section 2 ra gihapon. Didto lang ko nakaamgo, nga may kaibog diay ko kang Tarah, kay mingawon man ko niya. Para nako, dili kompleto akong adlaw kung di ko makakita niya.
-										
-										Then I came up with a plan. Kay naa pa may third year, dayon fourth year, naa pa koy pag-asa nga magkaklasmet mi, ang kinahanglan lang nako buhaton, magtuon pag-ayo, tanan assignments ug projects himoon, tapos participate sa tanan klasrum activities, ug syempre taas ang kuha sa mga quizzes ug tests. Simpol ra ang plano pero lisud buhaton. Kay sa sunod, kibaw man ko ato niya, nga consistent to siya, kay bright lagi, panag-an nako section 1 ra gihapon to si Tarah pag-third year, busa nagdepende ra jud to sa akoa kung magkaklasmet mi o dili. Didto pa jud ko nagsugod pagtuon. Sukad pag-elementary, mosulod lang ko sa eskwelahan nga way tuon-tuon, basta lang gud, wa ko mag-apas og dagkong grado. Adtong tungura, every score test counts na. Mao man gud to ang magbitbit kanako paduol kang Tarah, akong score.
-										
-										Unya niadtong tungura pud, among klasrum naa sa third floor, ang ilaha sa second floor. Kada recess, mogawas ko sa among klasrum, kay kani laging wala tay balon, mauwaw ta nga mag-apung sa klasrum, magtan-aw sa imong mga klasmet nga nagkaon, unya ikaw wala juy gikaon, kada lamoy sa imong klasmet, ikaw pud dungan kag lamoy og laway. Pasumangil na lang kog gawas, adto kunohay kos canteen, diay to miadto kos likod sa among building, sa third floor ra gihapon, nga may overlooking view sa klasrum nila Tarah. Maglulantaway ra ko, magbantay, mag-ampo nga untana mogawas si Tarah sa iyang klasrum, bisag kadiyot ra. Usahay mogawas, magpasalipud ra dayon ko aron di ko niya makit-an. Morag nahimo nato nako nga routine. Sa tibuok adlaw, makaingon ko nga mao ra jud toy pinakaimportante ug pinakanindot nga takna. Kung makakita ko niya makalimot ko sa akong mga problema. Makalimot ko sa akong kagutom kay duha ra ka pandesal akong pamahaw. Makalimot ko sa akong kamingaw kay akong pamilya tua tanan sa Manila. Makalimot ko nga naa pa diay koy bayronon nga tuition fee, kinahanglan na sad mag-promissory note. Siya ang naghatag og kolor sa akong kinabuhi nga black and white. Basta makakita gani ko niya, nothing seems to matter anymore, as if the time stood still. There would be peace in my heart. Slow motion ang tanan, morag naa sa salida ba. Usahay pud di man siya mogawas sa iyang klasrum, maluya ko, mora bag naa koy hilanat. Ang akong kagutom mahimong pasmo.
-										
-										Pero kontento na bya ko niadtong kahimtanga. Way koy plano nga manguyab kay I can't afford to have a girlfriend, daghan kaayo kog problema, wa koy panahon, wa koy kwarta, di gani ko kapalit og softdrinks. Unsa may ipainom nako niya kung mag-date mi, ice water? Usa pa, I considered myself, nga bata pa kaayo ko para mag-apil-apil sa ana nga butanga. This is just an infatuation. Molabay ra ni. Pero ang akong plano padayon ra gihapon, kay kung magkaklasmet mi mas malipayon ko, ang proximity ug duration sa among encounter mas mo-improve, mas taas-taas ang oras nga makit-an nako siya, ug mas duol, mas nindot man jud nang magtan-aw kag, halimbawa basketball, nga naa ka sa ringside kaysa kung naa ka sa balcony.
-										
-										Usa kaadlaw, nagkaproblema ko kay kani lagi akong best friend, si Joseph, nahibulong siya kay ika-breaktime mawala lang kuno kog kalit, asa kuno ko padulong, nganong wa man ko manghagad. Adtong adlawa nakadesisyon ang kanahan nga sundan ko. Ug didto ko nasakpan. Gikataw-an ko niya.
-										
-										"Kayata nimo bai oi, naa ra man diay ka diri," ingon ni Joseph. "Halaka, gibantayan nimo si Tarah no?"
-										
-										"Ayaw sigig saba ba, hinayi imong tingog," ingon ko. "Ayaw rabag saba sa uban bai ha, mauwaw ta."
-										
-										"Kayata, wala ka mosulti diay? moisplikar?" ingon ni Joseph.
-										
-										"Nganong moisplikar man ko? Dugang lang na sa akong problema ba," ingon ko. "Maayo mag pareha ta nimo nga lover boy." Sa tinuod lang, kato si Joseph, daghan nato siyag uyab, maayo to siya mangatik og mga babai. Tisoy sad, nindot og barog, kompleto sa gamit kay ang amahan ato nagtrabaho sa Saudi. Daghana lagig Betamax ug VHS tapes sa ilang balay. Silingan man mi sauna, sila gud toy may pinakadako nga TV sa among lugar.
-										
-										Ingon ni Joseph nga tabangan lagi kuno ko niya. Ingon ko dili na na necessary, oki ra ko.
-										
-										"Kinahanglan jud nimo bai nga ipagawas nang imong gibati," ingon ni Joseph. "Kinahanglan mahibaw jud nang bayhana sa imong pilings, iluum na nimo, mubuto na ba. Kung di ka kaisplikar, himo kag lab litir gud, atol kaayo kay hapit na ang Balintains Dee, unya buwak pud, usa ka ruus, payts na na."
-										
-										"Wa lagi koy kwarta, kibaw bya ka sa akong kahimtang," ingon ko.
-										
-										"Ako lagi bahala, ako pay mohatud sa ilang klasrum, mora man tag di migo," ingon ni Joseph.
-										
-										Ambot ato nganong nakumbinsi man sad ko. Pagkahuman sa among klase nangadto mi sa Gaisano, nangita mig stationery. Dugay ko nakapili. Si Joseph ang nibayad.
-										
-										Mga usa pud to kasemana nakog sumuwat sa love letter. Kalimot na ko unsa toy akong gipanuwat didto, usually mga random thoughts lang, tuyok-tuyok ra ang istorya, naay mga lyrics sa kanta, basta unsa lay mosulod sa utok gud, ininglis to, aron jud ma-impress si Tarah. First time to nako maghimog love letter ug napuno nako ang tulo ka pages. Nadugay lang ko pagdesisyon kung ibutang ba nako ang akong tinuod pangan, kay ang akong original nga plano gyud, butangan lang tana og, "Yours Truly, Your Secret Admirer", pero basin naa siyay klasmet nga nagka-admire pud niya, pwede niyang angkonon akong hinaguan, yayay ko, makahilak ko sa tago ani. Mao to gibutang nako akong tinuod pangan, bahala na, tinuyuan gud ni nako, kinahanglan naa jud koy baruganan, kinahanglan seryoso ko. Kung gusto tika, gusto tika, mao nay tinuod nga lalaki.
-										
-										Atong mismong Valentine's Day na, buntag pa sayo, gipangita na dayon ni Joseph ang akong suwat. Gihatag nako niya. Iya dayon ko gipakita sa sulod sa iyang knapsack: usa ka red rose ug polo nga long sleeve. Everything was according to plan. Ika-recess, mogawas si Joseph, mag-ilis, mag-isputing, dayon adto sa klasrum ni Tarah, i-deliver tong love letter ug buwak. Mao jud toy nahitabo. Tong pag-recess dagan-dagan ko sa akong pwesto---the overlooking watch station. Kit-an nako si Joseph, approaching sa klasrum nila Tarah, gikulbaan ko, kusog kaayo akong heart beat nga madungog na nako. Likod ra ni Joseph ako makit-an. Mihunong siya tungod sa pultahan ug hambog kaayo nga nanuktok bisan abli ang pultahan, aron makuha ang atensyon sa mga estudyante sa sulod. Nihupo ra ko, galili. Taud-taud nadungog nako ang mga syagit sa mga babaye didto, bisan layo-layo tong akong gipwestuhan. Migawas si Tarah. Gihatag dayon ni Joseph ang love letter ug rose. Daghana lagi nagitapok mga klasmet ni Tarah nga babaye, nakuryoso siguro sila, morag hinuog nagpatoktok si Joseph og mga manok nga laag, nidugok, pwerting gubuta. Maong nisibat ra dayon si Joseph, gisamokan. Ang kaparat ani kay giukab man sad ni Tarah tong suwat kay daghan man ang namugos, "Sigi na, sigi na, basaha na na." Mao tong pag-abli, katong akong love letter nagkapasa-pasa, siguro ang page 1 si Tarah maoy naggunit, ang page 2 lain nga babai, ug ang page 3 lain pud nga babai. Bag-o nahuman ang breaktime, siguro ang tibuok klasmet ni Tarah nga mga babaye nakabasa atong akong love letter. Unya kay gibutang raba to nako akong pangan, gisumog-sumog na hinuon si Tarah. Kagamay ra nga sipyat, kadakong bulyaso akong nahimo. Nagmahay ko sa akong gibuhat. Maayo pang gibutang to nako, "Your Secret Admirer". Diretso kog yaka oi, nawad-an kog kusog, mora kog nalipong, mihangad na lang intawon kos langit, nagpiyong. Mihupaw.
-										
-										Kung buot hunahunaon angayan untana ko maglipay, kay ang akong tinguha nga mapadayag akong gibati ngadto kang Tarah natuman man pero ang nahitabo, nagbasul ko, naguol ko kay dili nako tuyo nga pakauwawan siya. Naglagot ko sa akong kaugalingon, sobra ra ko ka-careless. I have ruined a girl's life. This is not something everybody can forget overnight. Kung pwede pa lang nako ma-undo, i-control Z, ako nang gihimo ba. Nevertheless, wa jud ko mo-deny sa akong gibuhat nga ako to gahimo sa love letter.
-										
-										Naluoy ko kang Tarah, siya ang biktima diri. Gusto tana nako mag-sorry pero di pa panahon kay mosamot ang problema. I knew she would need space and time, space away from me and a time to heal. Before pa atong incident, kung magtagbo mi sa campus, magtinagdanay mi, of course, di na na mahitabo. Busa pagkasunod adlaw, nakahunahuna ko nga kung makit-an ko sa iyang mga klasmet, unya naa pud siya sa duol, mapuno siya sa sumog, di bale na sa akoa kay baga man jukog naong, busa aron di ni mahitabo, gilikayan nako tong mga lugar nga posibleng magkasugat mi ni Tarah. Sukad niadto, sa college gate 3 nako magsulod-gawas, pasumangil nako sa sikyu nga mas duol didto ang mga dyip nga moagi sa among balay. Wala kaayo mga estudyante nga mag-agian didto bisan mga college pa kay lapokon unya daghan pud mga adik nga tambay. Wala koy angay nga kahadlokan, holdapon ko nila, wa koy kwarta, ila kung kulatahon, dunggabon, bahala sila, maayo aron mahuman na akong kinabuhi. Hinoon hapit naman sad ang bakasyon. Nagpasalamat kos Ginoo nga walay dautang nahitabo nako didtong dapita hangtud nahuman ang school year.
-										
-										Pag-third year, mibalhin kog puyo sa akong lola, iyaan sa akong inahan, diris may Pasil kay mas duol sa eskwelahan. Unya si Joseph, mibalhin pud silag puyo, mibalhin sila sa Bohol. Nagkita mi pag-usab fourth year nako. Ang good news ani, kay pag-third year, na-section 1 na ko, nagkaklasmet jud mi ni Tarah. Nawala na tong mga sumog-sumog, pero naa pa tong mga babaye nga nakabasa sa akong love letter, klasmet namo, siguro ni-matured na gamay, dili na kaayo kiat. Paminaw nako, nagpaniid ra to sila, one slight advance nako, mo-react to sila ba. Mauwawan na sad si Tarah. So, I acted normal, no advancement, no signs of affection towards the girl. Pero sa sulod sa akong kasingkasing ang akong kalipay hilabihan.
-										
-										Inspired kaayo ko nga mosulod sa klase. In fact, nahimong kong Math Wizard sa tibuok campus, nalupig nako ang mga fourth year. Ako ang representative sa among eskwelahan kung naay Interschool Math Quiz Bowl atong panahona. Di ko katuo. Kibaw ko nga kamao ko sa Math, pero dili ingon ato kagrabe. Ni-maximum overdrive ang akong utok, kay para lang magpasikat kang Tarah. Kuyawa lagi.
-										
-										Gwapaha sad tong Tarah oi. She's like the moon in a clear sky, I could stare at her for hours and never wanting more. I am enthralled by her beauty. Tabunon, intsikon ang mata hapit-hapit ra jud siyag nawong ni Kathryn Bernardo, smiling, nindot kaayo duolon ba, istoryahon.
-										
-										Maong di kahibulongan, nga magkagusto pud to sa iyaha si Tristan, ang pinaka-pogi sa klase, ang campus heartthrob, ang matinee idol, ang crush ng bayan, the boy next door, whatever you call him. Bright, neat, buotan, mao na si Tristan, daghan kaayo nagka-crush niya nga mga babaye, bisan mga ahead namo, mga fourth year. Wa toy uyab si Tristan sa school, bisan sa iyang katisoy, kay di to pareha ni Joseph, nga naa gani babaye nga padispli-displi, birigan dayon. Nawala na ko sa picture, na-focus na karon ang camera sa Tristan-Tarah love team. Bisan obvious kaayo nga naibog to si Tristan kang Tarah pero walay kaayoy mga babaye nga nagsumog-sumog kang Tarah, maybe because, dili sila gusto magkauyab si Tristan ug Tarah. They wanted Tristan for themselves.
-										
-										Dili nako malikayan, ang akong reaksyon, I started comparing myself with Tristan. Lagot ko kay kaputi man tong polo ni Tristan, ang akoa lagum man. Unya ang undershirt ni Tristan, nindot kaayo, morag Hanes man siguro to ang brand, limpyo ug hugot kaayo ang neckline, mora atong sa salida nga TOP GUN, kadtong gisul-ob gani ni Tom Cruise, klaro kaayo nga mahalon, ang akoa intawon, kana rang mga libre sa hardware, mga hinatag sa New Year, ug kana sang mga hinatag sa mga kandidato sa eleksyon, mga politiko, usahay gani mabasa pa sa likod, mulahus sa akong polo nga uniform, "Osmena for Mayor". Ang iyang medyas pud mas puti ra kaayo, ako naman tana gihumolan og chlorine tong akoa. Nindot pa kaayog hinapay, ang akong buhok intawon, kalisud sudlayan mosukol magbuot og iyaha. Ang iyang tupi pud, ratsada, uso man to ang Bob Cut, angayan kaayo sa iyaha, pormado kay hapsay kaayo pagkabarbir, gikiskisan jud, ako intawon, didto ra ko nagpatupi sa among silingan nga kaedad ra nako, mao pay pagpraktis, usahay makabang, ang katapusan mahimong Army Cut, pasalamat ka kung di ka masamaran kay usahay gud maguntingan imong dunggan, sigi lang kay libre man pud, paita kinabuhia oi.
-										
-										Wa madugay, mi-concede ra ko, nadawat ra nako ang kamatuoran, Tristan is the better guy. Anyways, it didn't change anything. Si Tarah ra man gihapon ang akong inspirasyon. Wala koy labot ni Tristan.
-										
-										Pero, sa duha ka okasyon, nakit-an nako si Tarah ug Tristan, nanglingkod, tapad pero di jud kaayo duol, puro sa backstage, sa may hagdanan, ug sa magkalain-lain pud nga stage, nasiplatan ra gud nako, wa jud ko mitutok, naglakaw man ko adto, dire-diretso ra ko, kunohay walay nakit-an. Unsa may naa sa stage? Nganong didto man jud sila pirmi mag-istoryahanay? Kahilig pud nilag backstage, naglabad akong ulo.
-										
-										Nagsakit jud ang akong kasingkasing, morag gihiwa tapos gibubuan og alcohol, kahapdos kalami ityabaw. Nakapangutana ko, nganong ingon adto akong gibati. It's not that I was betrayed. Di man mi uyab ni Tarah, di na mao ang sitwasyon. Wa sad koy ikasulti kang Tristan, buotan, dili mi kaaway, kung nagkig-istorhanay man gani siya kang Tarah, I'm sure he has a good intention. Nasuya lang siguro ko kang Tristan. I was wondering how does it feel to sit next to her, to hear her speak my name. Gisakitan ko because I'm losing her? One can not lose something that he didn't have in the first place. She is not mine. Nakaamgo ko, mao toy nagpaantus nako ba, because she is not mine. Na-selfish na ko, I wanted her to be mine, and mine alone, akong Tarah, akoa lang. With the emergence of the new desire, Tristan became a threat, an obstacle.
-										
-										Ako ra man juy nagpalisud sa akong sitwasyon. Kung mapapas lang jud nako akong desire, human ang problema, di na ko apektado, I can go on with my life, di na ko manghilabot kang Tarah, kang Tristan. Everybody is happy. Maayo untana kung ingon ana ra kadali. Di ba nganong kapnon man ang iro, kay aron dili na manguwag. Ang hinungdan sa problema kay ang itlog. Tangtangon ang itlog, tangtang ang uwag. Unsa kaha pud kung lugiton ko ning akong kasingkasing, pareha anang mag-ukal kag liso sa sayote.
-										
-										Miabot ang periodical exam, walay mi-absent, puno ang klasrum, pero hilum kaayo kay tutok ang tanan sa iyang test paper. Giusab ang seating arrangement, giipon tanan mga lalaki sa tuong parti sa klasrum, ug mga babaye sa pikas parti, sa wala. Ang among maestro naa sa atubangan, naglingkod likod sa iyang desk table, sigig lingi-lingi, usahay manita, "Shuuuuuu, unsa man na?" "Hilum ha, ayaw paabuta nga tawgon taka, kibaw naka kinsa ka." Istrikto to si Sir, kahadlokan, siya among adviser, nadungog gani namo sa pikas klase kuno, naa siyay gikumot nga test paper, automatic hagbung ang estudyante, nasakpan nagkodigo.
-										
-										Chemistry to nga subject ang among giansiran.
-										
-										"15 minutes more," ingon ni Sir.
-										
-										Mihunong og dungan ang tanan sa pagsuwat, gi-absorb ang gisulti ni Sir. May mikusmod ang nawong, may nanakla, may mihupaw, pero kasagaran mi padayon ra sa pag-ansir. Wala ko mabalaka kay humana kog ansir, nag-review na lang, nagbasa-basa na lang ko. Mibalik paghilum ang klase. Taud-taud duna na say interruption.
-										
-										"Dear Tarah," ang yawit ni Sir.
-										
-										Mihangad ko, naa diay gibasa si Sir, gigunitan ilalom sa iyang lamisa, di nako makita.
-										
-										"How are you today?" padayon ang basa ni Sir. "I hope you're fine, as for me I'm fine too."
-										
-										Nangatawa ang klase, light ra nga katawa, mga ¼ ra. Mao toy unang parti sa iyang gibasa. Hinay-hinay, midaghan ang mitan-aw kang Sir, naminaw sa iyang pagbasa. It didn't take me long, para ma-realize nga katong iyang gibasa, usa ka love letter, ang love letter nga hinatag nako kang Tarah last year. I can't believe this is happening. Gusto ko mudupa ug mosyagit, "Please Stop! Igo na! Sakto na Sir! Maluoy ka!"
-										
-										Daghan ang misulod sa akong hunahuna. Nganong naa man to sa iyaha? Diin man na gikan? Wa ko kibaw unsay akong buhaton. Mo-walk out ko? Mag-pass kaha kog test paper aron ma-interrupt si Sir, dayon gawas?
-										
-										Kada pulong nga gibasa ni Sir, morag pabilo sa dinamita nga gidagkutan, nagkaupos kini, hangtud nga moabot sa tumoy, ma-mention akong pangan, "Yours Truly----", boom, buto ang dinamita, bungkag ang tanan, mahibaw-an ako ang gahimo sa love letter, maayo pag mamatay. Mauwawan na sad si Tarah. Madungagan na pud akong sala.
-										
-										Maayo gani kay mitindog si Tarah ug miduol kang Sir. Mihunong pagbasa si Sir kadtong naa na si Tarah sa iyang atubangan.
-										
-										"Akoa man na Sir," ingon ni Tarah.
-										
-										Mitan-aw si Sir kang Tarah ug mingisi. Gikulbaan ko unsay sunod buhaton ni Sir. Salamat intawon, iyang gipilo ang suwat dayon gidunol kang Tarah kauban ang sobre niini.
-										
-										Syempre, naiintriga ang mga klasmet pero walay naningog, hadlok pud siguro sila ni Sir makasab-an kung magsaba-saba.
-										
-										Nakadungog kog mga hunghung sa likod, wala ko milingi, wala ko kibaw kinsay gasulti, kunohay wala ko kadungog, si Tristan ang ilang gipasanginlan nga maoy naghimo sa maong love letter. As I have said, I was already out of the picture, dugay ra. Mao to, bisan pa sa mga babaye nga nakabasa sauna, nakalimot to sila nga akoa to. Kausa ra man gud to nila nabasa ug kadugay na nga panahon.
-										
-										All this time, gidala-dala ra diay to ni Tarah ang akong love letter. Dili na diay to akoa, iyaha na diay to. Siguro gibasa-basa to niya sa iyang free time. I wonder how many times to niya nabasa. Gikilig kaha to siya? I hope so.
-										
-										But it would be better kung ako ang nagbasa sa atubangan niya. Manglingkod mi ilalom sa dakong punoan, palandong. Ang punoan naa taliwala sa lapad nga kahumayan. Nakasandig ko sa kahoy, siya pud naghigda sa mga dahong laya, ang ulo diris akong paa, naghangad nako, naminaw sa akong pagbasa. Nga sa matag karon ug unya, ang hangin molabay ug samukon ang iyang buhok, nga ako pud iwahing aron makita ang iyang maanyag nga nawong. Adlawan pero natabunan og daghan panganud ang langit. Way tawo sa palibot, kami rang duha ug ang mga langgam nga naghagwaay sa mga sanga. Unya moingon dayon ko sa uwahi, "Yours Truly, John Hernandez." Pakpak si Tarah.
-										
-										Nasobrahan akong daydreaming nga wala nako mamatikdi nga ako na lang diay ang wala kapasa sa papel. Anyways, ang kamatuoran nga gitipigan niya ang love letter naghatag kanako og bag-o nga paglaum, kalipay ug kadasig. Gusto nako siya istoryahon. Ingnon nako siya, "Day Tarah, di nako malimud sa akong kaugalingon ug labaw na sa imoha nga may katakus ko nimo. Kibaw ko nga daghan pag mga laing butang nga mas angayan nato hunahunaon, mas angayan nato atimanon pag-una. Kibaw pud ko nga mga bata pa ta, mausab ra akong gibati. Pero ang pangutana Day Tarah, unsaon na lang kung di mausab, kung ikaw gihapon ang babaye nga akong damguhon. Maong ayaw usa og desisyon kay sayo pa. Paabuta, motobo pa lagi ko, mogwapo pag samot. Ang akong pasabot ba, nga gaan ko nimog chance, kung huwaton ko nimo, balikon taka. Kung baga, pag-downpayment, pa-reserve diris akong kasingkasing, siguro after 10 years, igo naman siguro na, mahuman nimo imo eskwela, makatrabaho ka, ug labaw sa tanan, ma reaffirm nato ang akong gibati ug imo pud. Basin diay sa ngadto-ngadto mausab pa imong hunahuna, ug ang imong gibati. Ang desisyon nga mahimo nimo sa anang panahona, maingon nga sakto."
-										
-										Gara kaayo ko, apurado nga istoryahon si Tarah. Giingnan dayon nako tong iyang best friend si Hazel nga gusto ko makig-istorya kang Tarah, huwaton nako siya sa parking lot duol sa school chapel, alas 3 sa hapon. Nindot didto, mas nindot pa sa backstage, wa kaayo tawo labi na kung hapon. It will be me and her, alone.
-										
-										Wa kaayo ko madugay paghuwat ni Tarah. Miabot siya uban ni Hazel. Ug ingon ni Hazel adto lang daw siya sa canteen maghuwat pud kang Tarah. Naglingkod ko sa plant box, kana gong semento nga galibot sa mga tanom, gihimo gani na siya aron mabutangan og yuta dayon matamnan, ang edge ana ba, diha ko naglingkod kay mga tunga pud sa metro ang katas-on adto, sakto ra lingkuran. Misinyas ko kang Tarah nga lingkod pud. Milingkod tuod siya pero duha kadupa among distansya. Nahinumdum dayon ko sa gisulti ni Joseph, "Bai, kung hagaron gani nimo ang babai og diit dayon motungha siya, 50 percent nga nagkagusto na nimo, 50 percent pud nga sugton ka niya kung manguyab ka." Pero dili man ni date. Sigi lang gud ang importante mitungha siya ug kaning taknaa iya ni gigahin sa akoa. Pasalamat ko kay gigaan ko niya og panahon nga TO BE HEARD, to defend myself before I am condemned. Di ko gusto nga usikan iyang oras, so I got down to business. Miduol ko niya, hinay-hinay, tapad og lingkod. Mi-assume ko nga oki ra niya kay wa man siya mosibog palayo. Misiplat ra ko kang Tarah kay mauwaw ko motan-aw sa iyang nawong ug mahadlok ko mututok sa iyang mga mata, basin ma-hypnotize ko, motikig ko, di na ko katingog. Mitan-aw na lang ko sa akong tiil ug kadtong nakaipon nakog igong kaisog, taud-taud pud, nagsugod na kog istorya. Dire-diretso ang akong sulti, morag nag-recite og panunumpa. Ug by the time nga nahuman ko, ako siyang gilingi, naa na sa maximum level ang akong kabaga og nawong, kay nakahunat na, mitan-aw ko niya, naghuwat sa iyang tubag, sa iyang reaksyon. Didto lang nako namatikdan nga nagkurog-kurog na diay siya. Ako pud, ambot unsay nasulod sa akong utok, gipugos pa man gihapon nako siya og patubag. Way klaro. Di pa jud igo, midikit ko niya. Miaksyon siguro kog gunit sa iyang kamot aron pakalmahon siya kay diri na siya nagsugod og sibog palayo.
-										
-										"Ayawg duol nako ba," ingon ni Tarah.
-										
-										"Ngano man?" pangutana nako. "Naunsa man ka?" Misibog na sad ko paduol niya.
-										
-										Didto na mitindog si Tarah ug midagan. Ako pud siya gigukod kay kinahanglan nako mahibaw sa iyang tubag. Dayon naglibot-libot mi aning awto.
-										
-										"Ayaw lagig kog gukda," ingon ni Tarah.
-										
-										"Ngano lagi? Tubaga ko ba, naunsa ka?" ingon ko. Sa tanto namong libot-libot ug dagan-dagan, nasapinday siya ug natangtang ang lapa-lapa sa iyang sapatos nga baratuhon, kay kung mahalon pa to, dili to basta-basta matangtang kay tinahi raba nang mga sapatos nga mahalon, kay baratuhon man lagi, rugby ra ang gagunit sa lapa-lapa, wa jud gi-design sa dinaganay. Akong napunitan ang lapa-lapa sa iyang sapatos.
-										
-										"Balik diri ba, ayaw nag dagan, naa nako imong lapa-lapa," ingon ko samtang giisa ning lapa-lapa sa sapatos aron iyang makit-an ug motuo siya nga wa ko magtiaw-tiaw. Napansin nako nga nagtakingking na siya, tapos kita na ang medyas sa lapa-lapa sa usa ka tiil. Luoya oi.
-										
-										Mikusmod iyang nawong, morag kahilakon. Milakaw ko padulong niya, wala na siya modagan.
-										
-										"Ikaw man gud," ingon ni Tarah adtong nagkaatubangay na mi. Milingi-lingi ko, nangitag kapwestuhan kang Tarah.
-										
-										"Ta! Adto ta didto," ingon ko. Misinyas ko sa eskina sa parking lot. Way tawo didto ug tuyuon. Akong siyang gialalayan. Maayo pud kay may plant box didto. Ako siyang gipalingkod tapos akong gibutang ang natangtang nga lapa-lapa duol sa iyang tiil. Mihangad ko niya, klaro kaayo ang kabalaka sa iyang nawong, morag nangutana nga unsay among buhaton.
-										
-										Miingon ko sa iyaha, "Tar, diri sa ka Day ha, mubiya sa ko kadiyot, mulakaw ko pero mobalik ra ko, huwata ra ko diri, mobalik ra lagi dayon ko pramis, ha."
-										
-										Wala siya mitingog, mitando lang. Wala man sad siyay choice.
-										
-										Misutoy kog dagan sa canteen, gipangita si Hazel.
-										
-										"Zel, adtoa sa to si Tarah be, di kalakaw, naguba ang sapatos, tua galingkod luyo sa awto nga puwa," ingon ko. "Moapas ra ko mangitag pa kog pisi."
-										
-										Misibat dayon si Hazel. Sa sulod sa canteen, nakita nako tong basurahan, daghan drinking straw. Naka-ideya ko, akong gipanguha tong mga straw, nanan-aw diri nako ang mga estudyante sa sulod kay gikalkal ko man ang basurahan, kinahanglan nakog daghang straw.
-										
-										Wa madugay nakabalik ra ko sa parking lot. Naabtan nako si Tarah ug Hazel.
-										
-										Giinat nako ang mga straw ug gisumpay-sumpay aron mahimong pisi. Gibangan nako ang lapa-lapa sa sapatos ngadto sa tiil ni Tarah. Pinadagan pagkahigot, ekis-ekis mora na hinuog sapatos sa kaniadtong mga tawo sa Greece. Wala mahimuot si Tarah sa resulta pero wala lagi siyay choice. Mihangyo ko kang Hazel nga ubanan si Tarah pauli. Sa tinuod gusto jud to nako nga ako ang mohatud, naglikay lang ko nga makit-an ming duha sa public, usa pa morag suko pa si Tarah nako tungod sa nahitabo. Nangayo na lang intawon kog pasensya kang Tarah ug Hazel. Ug mao to ang pinakauwahi nga nagkaistorya mi ni Tarah og personal.
-										
-										Nagsigig balik-balik sa akong hunahuna ang nahitabo. Unsa jud tana toy angayan nako nga gibuhat. Diin ko nasipyat. It would seemed nga tanan na lang akong buhaton bisag naplano na everything will just go wrong basta naa na si Tarah. Daghan na kaayog kog sala ni Tarah ba, mga na-damage, dinagko pa jud, mga makauuwaw ba. It would be better if I stay out of her way, basin unsa na say akong mahimong kadaut.
-										
-										Misuwat akong inahan nga pwede na daw ko moapas sa Manila ug didto ipadayon ang akong hayskul kay na-regular na ang akong amahan sa plastic factory, pero ang iyang application pa-abroad gi-process pa daw. Pagkahuman nako og third year milarga kos Manila, ako ra usa, misakay kog barko, first time to nako, sagol kahadlok og excitement akong gibati, kinse anyos pa raba ko ato. Nalipay pud ko, in a way, kay bag-o na pud ang environment, maka unwind ko, ma reset nako tanan, ug labaw sa tanan malimtan na nako si Tarah. Malas lang kay adtong nagpa-enrol na ko sa mga eskwelahan duol sa among gipuy-an, pare-pareho ang ilang giingon, dawaton kuno ko nila pero night class, moagi pa kog fourth year dayon naa pa fifth year bag-o makagradwit, kinahanglan minimum duha ka tuig ang residency aron moisyu sila og diploma. Wa ko kauyon. Mahal raba ang tuition fee, mora pug regular class. Usa pa, nagdali ko kay dili raba nato matag-anan ang panahon. Duha katuig dugay na kaayo na, delikado ang akong kaugmaon.
-										
-										Busa napugos kog balik sa Cebu. Duha na kasemana nagklase pero kidawat pa gihapon ko sa among eskwelahan kay old student man ko, sukad pa first year, ilado pud ko, ako ang ilang math wizard. Section 1 ko pero kay hagbay ra lagi nagsugod ang klase nahatag na kuno sa ubang estudyante ang akong slot, bale puno na sa section 1. Reklamo ko, "pwede diay na?" Ingon ang registrar mag pull-out na lang kuno sila og usa ka estudyante sa section 1 ug pwede pud kung mosugot ko sa section 2 na lang ko kay naa didto bakanti. Mihangyo ko sa section 4 na lang. Nindot hinuon hunahuna nako, di na mi magkaklasmet ni Tarah tapos ang section 4 mas layo-layo na sa section 1, lagyo jud ang mga room niini. Misulod dayon ko sa klase adtong adlawa pag-enrol nako. Pag-recess nadiskobre nako nga tapad ra man diay og room ang section 1 ug 4. Pagkamalas ba oi. Unya ang room sa section 1 naa sa tumoy, tanan mga tawo sa section 1 didto jud moagi sa among klasrum, samutan pa kay new comer lagi ko, sa atubangan ko gipwesto sa may pultahan kita kaayo nako tanan mga tawo sa section 1 nga molabay.
-										
-										"How can I forget you girl, when there is always something there to remind me," ingon pa sa kanta.
-										
-										Adtong fourth year ko, ang mathematics mas complicated na, preparasyon to sa Calculus. Daghan mga klasmet nako nga naglibog, lisud og sabot. Ang akong gibuhat, kada recess gitabangan nako sila, ako ilang tutor. Makaayo ni nako kay ma-preoccupied akong utok aron di ko magsigig hunahuna ni Tarah, tapos agi na pud to pasalamat sa Ginoo sa abilidad nga iyang gihatag diri nako.
-										
-										Dayon may usa ko kaklasmet nga babaye, ganahan kuno kaayo siya sa akong agi. Sunod na pud ginindotan siya sa akong kuko. Dayon na sad giganahan siya sa akong tingog. Kanindot jud ingnon, "Sakto na, Oki na, I get it, naibog ka nako." Sa pirmiro naglikay-likay ko niya. Ingon ko sa akong kaugalingon, I'm done with girls. Then, na-consider nako ang posibilidad nga basin makatabang ning bayhana aron totally malimtan nako si Tarah. Frankly speaking, gwapa bya pud siya. Ayos na tana kaayo ang iyang puwa nga lips, kay attractive kaayo, kung dili lang tungod sa iyang duha ka ngipon sa atubangan nga morag dako ra kaayo para sa iyang nawong, nga usahay mosiwil bisan mutang-um siya. Akong gipangutana iyang pangan.
-										
-										"Sarah," ingon niya.
-										
-										"Sarah?" Akong giklaro.
-										
-										"Sarah, S-A-R-A-H, Sarah," ingon niya.
-										
-										Pastilan ba, sa kadaghang pangan, nganong Sarah pa man, usa ra man jud ka letra ang giusab. Di ni makatabang, samot akong problema. Naglabad akong ulo.
-										
-										Maayo gani, mga pila kaadlaw ang milabay, kay nagkita mi ni Joseph, iya ko gihuwatan sa gate, paggawas nako. Nanghagad, mangaon daw mi sa Jollibee, diri sa may Mango Avenue, ang pinakauna ug nag-inusara nga Jollibee sa Cebu niadto. Nahibaw-an nako nga namalhin diay sila sa Bohol kay nagbuwag iyang mama ug papa, naay laing laki ang iyang inahan. Ako pud giistorya sa iyaha ang tanan nahitabo nako sukad adtong third year, labi na tong sa amoa ni Tarah. Nangatawa mi.
-										
-										"Sigi lang gud, di pa Katapusan ng Mundo. Basta ayaw lang gyug panguyab por da sik lang nga naa kay uyab. Kuhaa jud tong imong gusto," ingon ni Joseph.
-										
-										"Ikaw gani daghan mag uyab," ingon ko.
-										
-										"Mao bitawng giingnan taka kay diha ko nasayop," ingon ni Joseph.
-										
-										Salamat kang Joseph kay adtong gabhiona nahibaw nako unsa akong buhaton. Naghimo na pud kog love letter. Akong gihulog sa Post Office, mismo sa Graduation Day, gi-address nako sa akong mga ginikanan sa Manila. Nagpasalamat ko sa ilang suporta ug pag-ampo, sa ilang pagmahal ug pagsalig diri nako. Sila ang akong inspirasyon nganong nakahuman kog hayskul bisan sa mga kalisdanan.
-										
-										Nakuha jud nako ang akong pinakagusto, ang makagradwit og hayskul.
-										
-										Si Tarah na-honor to siya. Ug samtang nagtan-aw ko niya, paghuman sa graduation rites, nga nakipaghimamat sa iyang mga klasmet nga babaye, full of smiles, may kalit lang nga mikuhit sa akong kilid, si Sarah. Paglingi nako iya dayon ko gigakus tapos gihagkan sa aping.
-										
-										"Salamat ha, sa padtudlo og Math," hunghung ni Sarah.
-										
-										"Didto ka pasalamat," tubag nako samtang gatudlo sa langit.
-										
-										"Bye," ingon ni Sarah, dayon lakaw nga nagpahabilin ang siplat. Mikaway ra ko, morag misulti nga, "pag-ayo-ayo". Balik kog lantaw kang Tarah. Ako lang gitagbaw akong kaugalingon, because I knew I will never see her again. Mao na to ang last.
-										
-										And as for Tristan, daghan siyag na-achieve since pag-third year namo, nakadaug siya sa poster making contest, first prize, na-outstanding member sa ilang ilado nga organization, ug daghan pa. Pa-impress to siya kang Tarah pareha pud nako, pero wa jud to sila magkauyab ni Tarah.
-										
-										Akong nakat-unan nga oki ra na nga mapildi ka, kay naa man jud nay modaug, ang importante diha, at least you tried. Ang pinakapait kung matiguwang ka nga magmahay kay wala ka mosuway.
-										
-										I believe that each one of us has a talent, one way or the other, a special ability that makes us unique and extraordinary. Sometimes it has remained hidden because we are caught up with life's destitution, very busy we don't have any time anymore for ourselves, to look inside us, to discover our talents. With a little inspiration and motivation, one could shine and give off his true color.
-										
-										I believe God gave these things to us as gifts. And once you find out yours; you will stop competing with others, because we are all distinctive, we walk unusual paths to his unique journey. Race is just an illusion.
-										
-										I've learned that love doesn't always mean HOLDING ON. Sometimes you have to LET GO. Kana ganing mas gihunahuna nimo ang kaayuhan sa imong hinigugma kaysa imong kaugalingong kalipay, mao nay gugma.
-										
-										Busa, ayaw gyug basta-basta og hatag love letter.</p>
+									<h3>Earthquakes</h3>
+									<h4>What are Earthquakes?</h4>
+									<p>Most of the world’s earthquakes and approximately 75% of its volcanoes occur within the Ring of Fire, the Philippines being a notable part of this geologically active region (Britannica, 2024-Present).  The Philippines is known for its volcanic activity, with numerous active and dormant volcanoes. Movement of magma beneath the Earth’s surface exerts pressure on surrounding rock layers, leading to earthquakes (Smithsonian/USGS, 2024).
+										The Philippines has several major fault lines, including the Philippine Fault Zone and the Philippine Trench (PHOLVICS faultfinder, 2024). In 2023, a relatively large number of earthquakes occurred near the Philippines. A total of 1,473 earthquakes with a magnitude of 4 or above were detected within 300 km of the Philippines that year. One of the recent earthquakes that happened on 03 April 2024 occurred in Itbayat (Batanes) with a magnitude of 7.5 making it a major earthquake (PHOLVICS, 2024).
+										</p>
+								</span>
+							</li>
+							<li>
+								<span class="text">
+									<h3>Earthquake Hazards</h3>
+									<h4>What should we watch out for?</h4>
+									<p>
+										
+									</p>
+									<br>
+									<h5>Ground Shaking</h5>
+									<p>
+										<!--text-->
+									</p>
+									<br>
+									<h5>Ground Rupture</h5>
+									<p>
+										<!--text-->
+									</p>
+									<br>
+									<h5>Liquefaction</h5>
+									<p>
+										<!--text-->
+									</p>
+									<br>
+									<h5>Subsidence</h5>
+									<p>
+										<!--text-->
+									</p>
+									<br>
+									<h5>Tsunami</h5>
+									<p>
+										<!--text-->
+									</p>
+									<br>
+									<h5>Landslide</h5>
+									<p>
+										<!--text-->
+									</p>
 								</span>
 							</li>
 							
@@ -344,14 +226,26 @@
 									<span class="text">
 										<h2>National Disaster Risk Reduction Management Council</h2>
 										<p>Emergency Shits</p>
-										<p>(02) 911-5061</p>
+										<p>(02) 911-5061 | (02) 911-5062 | (02) 911-5063</p>
+										<p>(02) 911-5064 | (02) 911-5065 | (02) 911-1406</p>
+										<p>(02) 911-1873 | (02) 912-2665 | (02) 912-5668</p>
+										</pre>
 									</span>
 								</li>
 								<li>
+									<i class='bx bxs-building-house'></i>
 									<span class="text">
-										<h2>Killing Myself</h2>
-										<p>Firefighting, Fire Prevention</p>
-										<p>8818-5150/8816-2553</p>
+										<h2>Makati City Hall Trunkline</h2>
+										<p>FConnecting all departments/offices</p>
+										<p>8870-1000</p>
+									</span>
+								</li>
+								<li>
+									<i class='bx bxs-first-aid'></i>
+									<span class="text">
+										<h2>Philippine Red Cross</h2>
+										<p>Hotline: 143</p>
+										<p>Trunkline: (+63 2) 8790-2300</p>
 									</span>
 								</li>
 							</ul>
