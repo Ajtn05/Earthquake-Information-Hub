@@ -42,9 +42,9 @@ function showDefaultContent() {
 		document.getElementById('main-dashboard').style.display ='block';
 		document.getElementById('main-news').style.display = 'none';
 		document.getElementById('main-hotlines').style.display = 'none';
-		document.getElementById('main-notifications').style.display = 'none';
 		document.getElementById('main-maps').style.display = 'none';
 		document.getElementById('headerText').innerText = "Dashboard";
+		document.getElementsByClassName('form-input').style.display = 'none';
 	}
 showDashboardContent();
 }
@@ -64,7 +64,6 @@ newsButton.addEventListener('click', function() {
 		document.getElementById('main-dashboard').style.display ='none';
 		document.getElementById('main-news').style.display = 'block';
 		document.getElementById('main-hotlines').style.display  = 'none';
-		document.getElementById('main-notifications').style.display  = 'none';
 		document.getElementById('main-maps').style.display = 'none';
 		document.getElementById('headerText').innerText = "News";
 	}
@@ -77,37 +76,10 @@ hotlinesButton.addEventListener('click', function() {
 		document.getElementById('main-dashboard').style.display ='none';
 		document.getElementById('main-news').style.display = 'none';
 		document.getElementById('main-hotlines').style.display  = 'block';
-		document.getElementById('main-notifications').style.display  = 'none';
 		document.getElementById('main-maps').style.display = 'none';
 		document.getElementById('headerText').innerText = "Hotlines";
 	}
 showHotlinesContent();
-})
-
-//HANDLES NOTIFICATION BUTTON PRESS
-notificationsButton.addEventListener('click', function() {
-	function showNotificationsContent() {
-		document.getElementById('main-dashboard').style.display ='none';
-		document.getElementById('main-news').style.display = 'none';
-		document.getElementById('main-hotlines').style.display  = 'none';
-		document.getElementById('main-notifications').style.display  = 'block';
-		document.getElementById('main-maps').style.display = 'none';
-		document.getElementById('headerText').innerText = "Notifications";
-	}
-showNotificationsContent();
-})
-
-//HANDLES NOTIFICATION BUTTON 2 PRESS
-notificationsButton2.addEventListener('click', function() {
-	function showNotificationsContent() {
-		document.getElementById('main-dashboard').style.display ='none';
-		document.getElementById('main-news').style.display = 'none';
-		document.getElementById('main-hotlines').style.display  = 'none';
-		document.getElementById('main-notifications').style.display  = 'block';
-		document.getElementById('main-maps').style.display = 'none';
-		document.getElementById('headerText').innerText = "Notifications";
-	}
-showNotificationsContent();
 })
 
 //HANDLES MAP BUTTON PRESS
@@ -116,7 +88,6 @@ mapsButton.addEventListener('click', function() {
 		document.getElementById('main-dashboard').style.display ='none';
 		document.getElementById('main-news').style.display = 'none';
 		document.getElementById('main-hotlines').style.display  = 'none';
-		document.getElementById('main-notifications').style.display  = 'none';
 		document.getElementById('main-maps').style.display = 'block';
 		document.getElementById('headerText').innerText = "Maps";
 	}
@@ -124,21 +95,7 @@ showMapsContent();
 })
 
 
-const searchButton = document.querySelector('#content nav form .form-input button');
-const searchButtonIcon = document.querySelector('#content nav form .form-input button .bx');
-const searchForm = document.querySelector('#content nav form');
 
-searchButton.addEventListener('click', function (e) {
-	if(window.innerWidth < 576) {
-		e.preventDefault();
-		searchForm.classList.toggle('show');
-		if(searchForm.classList.contains('show')) {
-			searchButtonIcon.classList.replace('bx-search', 'bx-x');
-		} else {
-			searchButtonIcon.classList.replace('bx-x', 'bx-search');
-		}
-	}
-})
 
 
 
