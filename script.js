@@ -130,9 +130,41 @@ switchMode.addEventListener('change', function () {
 	if(this.checked) {
 		document.body.classList.add('dark');
 		document.getElementById("headerText").style.color = "white";
+		const h5Elements = document.querySelectorAll('h5');
+		h5Elements.forEach(h5 => {
+		  h5.style.color = 'white';
+		});
+		const h4Elements = document.querySelectorAll('h4');
+		h4Elements.forEach(h4 => {
+		  h4.style.color = 'white';
+		});
+		const h3Elements = document.querySelectorAll('h3');
+		h3Elements.forEach(h3 => {
+		  h3.style.color = 'white';
+		});
+		const h2Elements = document.querySelectorAll('h2');
+		h2Elements.forEach(h2 => {
+		  h2.style.color = 'white';
+		});
 	} else {
 		document.body.classList.remove('dark');
 		document.getElementById("headerText").style.color = "black";
+		const h5Elements = document.querySelectorAll('h5');
+		h5Elements.forEach(h5 => {
+			h5.style.color = 'black';
+		  });
+		const h4Elements = document.querySelectorAll('h4');
+		h4Elements.forEach(h4 => {
+			h4.style.color = 'black';
+		  });
+		const h3Elements = document.querySelectorAll('h3');
+		h3Elements.forEach(h3 => {
+			h3.style.color = 'black';
+		  });
+		const h2Elements = document.querySelectorAll('h2');
+		h2Elements.forEach(h2 => {
+			h2.style.color = 'black';
+		  });
 	}
 })
 
