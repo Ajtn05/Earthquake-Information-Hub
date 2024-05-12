@@ -146,6 +146,7 @@ switchMode.addEventListener('change', function () {
 		h2Elements.forEach(h2 => {
 		  h2.style.color = 'white';
 		});
+		document.getElementById('title').style.color = "white";
 	} else {
 		document.body.classList.remove('dark');
 		document.getElementById("headerText").style.color = "black";
@@ -165,6 +166,7 @@ switchMode.addEventListener('change', function () {
 		h2Elements.forEach(h2 => {
 			h2.style.color = 'black';
 		  });
+		document.getElementById('title').style.color = "black";
 	}
 })
 

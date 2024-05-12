@@ -3,7 +3,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: border-box;git s
 }
 
 a {
@@ -97,7 +97,6 @@ body {
 }
 #sidebar .main-text {
 	color: #DCDF31;
-	font-size: .7em;
 }
 #sidebar .brand {
 	font-size: 24px;
