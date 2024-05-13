@@ -1,3 +1,4 @@
+//handles sidebar expansion
 const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
 
 allSideMenu.forEach(item=> {
@@ -10,8 +11,6 @@ allSideMenu.forEach(item=> {
 		li.classList.add('active');
 	})
 });
-
-
 
 
 // TOGGLE SIDEBAR
@@ -94,13 +93,7 @@ mapsButton.addEventListener('click', function() {
 showMapsContent();
 })
 
-
-
-
-
-
-
-
+//window resize
 if(window.innerWidth < 768) {
 	sidebar.classList.add('hide');
 } else if(window.innerWidth > 576) {
@@ -108,7 +101,7 @@ if(window.innerWidth < 768) {
 	searchForm.classList.remove('show');
 }
 
-
+//
 window.addEventListener('resize', function () {
 	if(this.innerWidth > 576) {
 		searchButtonIcon.classList.replace('bx-x', 'bx-search');
@@ -116,6 +109,7 @@ window.addEventListener('resize', function () {
 	}
 })
 
+//handles map image change
 document.getElementById("image-select").addEventListener("change", function(){
 	var selectedImage = this.value;
 	document.getElementById("display-image").src = selectedImage;
@@ -126,6 +120,8 @@ document.getElementById("image-select").addEventListener("change", function(){
 
 const switchMode = document.getElementById('switch-mode');
 
+//I am tweaking bro its been 2 years ive talked to like 13 different people and theyre not her
+//This switches the colors for dark mode
 switchMode.addEventListener('change', function () {
 	if(this.checked) {
 		document.body.classList.add('dark');
