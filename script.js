@@ -28,8 +28,9 @@ const dashboardButton = document.getElementById('dashboard');
 const newsButton = document.getElementById('news');
 const hotlinesButton = document.getElementById('hotlines');
 const notificationsButton = document.getElementById('notifications');
-const mapsButton = document.getElementById('maps')
-const notificationsButton2 = document.getElementById('notifications2')
+const mapsButton = document.getElementById('maps');
+const notificationsButton2 = document.getElementById('notifications2');
+const helpButton = document.getElementById('help');
 
 
 //I FEEL LIKE THERES A MORE EFFICIENT WAY TO IMPLEMENT THIS BUT IDK, CURRENTLY
@@ -44,6 +45,7 @@ function showDefaultContent() {
 		document.getElementById('main-maps').style.display = 'none';
 		document.getElementById('headerText').innerText = "Dashboard";
 		document.getElementsByClassName('form-input').style.display = 'none';
+		document.getElementById('main-help').style.display = 'none';
 	}
 showDashboardContent();
 }
@@ -65,6 +67,7 @@ newsButton.addEventListener('click', function() {
 		document.getElementById('main-hotlines').style.display  = 'none';
 		document.getElementById('main-maps').style.display = 'none';
 		document.getElementById('headerText').innerText = "News";
+		document.getElementById('main-help').style.display = 'none';
 	}
 showNewsContent();
 })
@@ -77,6 +80,7 @@ hotlinesButton.addEventListener('click', function() {
 		document.getElementById('main-hotlines').style.display  = 'block';
 		document.getElementById('main-maps').style.display = 'none';
 		document.getElementById('headerText').innerText = "Hotlines";
+		document.getElementById('main-help').style.display = 'none';
 	}
 showHotlinesContent();
 })
@@ -89,8 +93,21 @@ mapsButton.addEventListener('click', function() {
 		document.getElementById('main-hotlines').style.display  = 'none';
 		document.getElementById('main-maps').style.display = 'block';
 		document.getElementById('headerText').innerText = "Maps";
+		document.getElementById('main-help').style.display = 'none';
 	}
 showMapsContent();
+})
+
+helpButton.addEventListener('click', function() {
+	function showHelpContent() {
+		document.getElementById('main-dashboard').style.display ='none';
+		document.getElementById('main-news').style.display = 'none';
+		document.getElementById('main-hotlines').style.display  = 'none';
+		document.getElementById('main-maps').style.display = 'none';
+		document.getElementById('headerText').innerText = "Maps";
+		document.getElementById('main-help').style.display = 'block';
+	}
+showHelpContent();
 })
 
 //window resize
@@ -101,7 +118,9 @@ if(window.innerWidth < 768) {
 	searchForm.classList.remove('show');
 }
 
-//
+
+
+
 window.addEventListener('resize', function () {
 	if(this.innerWidth > 576) {
 		searchButtonIcon.classList.replace('bx-x', 'bx-search');

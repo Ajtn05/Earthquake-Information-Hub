@@ -227,6 +227,7 @@ body {
 
 
 /* NAVBAR */
+
 #content nav {
 	height: 56px;
 	background: var(--light);
@@ -318,6 +319,9 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+#title {
+	font-size: .8em;
 }
 #content nav .profile img {
 	width: 36px;
