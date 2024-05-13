@@ -29,7 +29,6 @@ const newsButton = document.getElementById('news');
 const hotlinesButton = document.getElementById('hotlines');
 const notificationsButton = document.getElementById('notifications');
 const mapsButton = document.getElementById('maps');
-const notificationsButton2 = document.getElementById('notifications2');
 const helpButton = document.getElementById('help');
 
 
@@ -40,12 +39,12 @@ const helpButton = document.getElementById('help');
 function showDefaultContent() {
 	function showDashboardContent() {
 		document.getElementById('main-dashboard').style.display ='block';
+		document.getElementById('main-help').style.display = 'none';
 		document.getElementById('main-news').style.display = 'none';
 		document.getElementById('main-hotlines').style.display = 'none';
 		document.getElementById('main-maps').style.display = 'none';
 		document.getElementById('headerText').innerText = "Dashboard";
 		document.getElementsByClassName('form-input').style.display = 'none';
-		document.getElementById('main-help').style.display = 'none';
 	}
 showDashboardContent();
 }
@@ -98,13 +97,14 @@ mapsButton.addEventListener('click', function() {
 showMapsContent();
 })
 
+//HANDLES HELP BUTTON
 helpButton.addEventListener('click', function() {
 	function showHelpContent() {
 		document.getElementById('main-dashboard').style.display ='none';
 		document.getElementById('main-news').style.display = 'none';
 		document.getElementById('main-hotlines').style.display  = 'none';
 		document.getElementById('main-maps').style.display = 'none';
-		document.getElementById('headerText').innerText = "Maps";
+		document.getElementById('headerText').innerText = "Help and Support";
 		document.getElementById('main-help').style.display = 'block';
 	}
 showHelpContent();
