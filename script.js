@@ -118,7 +118,25 @@ if(window.innerWidth < 768) {
 	searchForm.classList.remove('show');
 }
 
+function handleWindowResize() {
+    var headerTitle = document.getElementById('title');
+    // Check the window width
+    var windowWidth = window.innerWidth;
 
+    // If the window width is less than 786 pixels, hide the element
+    if (windowWidth < 426) {
+        headerTitle.style.display = 'none';
+    } else {
+        // Otherwise, show the element
+        headerTitle.style.display = 'block';
+    }
+}
+
+// Add event listener for window resize
+window.addEventListener('resize', handleWindowResize);
+
+// Call the function initially to handle the initial window width
+handleWindowResize();
 
 
 window.addEventListener('resize', function () {
